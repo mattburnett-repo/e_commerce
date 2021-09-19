@@ -91,12 +91,13 @@ const AddressForm = ({ checkoutToken, next }) => {
                             </Select>
                         </Grid>
                     </Grid>
+                    <br />
+                    <div style={{ display: 'flex', justifyContent: 'space-between'}}>
+                        <Button component={Link} to="/cart" variant="outlined">Back to cart</Button>
+                        <Button type="submit" variant="contained" color="primary">Next</Button>
+                    </div>                  
                 </form>
-                <br />
-                <div style={{ display: 'flex', justifyContent: 'space-between'}}>
-                    <Button component={Link} to="/cart" variant="outlined">Back to cart</Button>
-                    <Button type="submit" variant="contained" color="primary">Next</Button>
-                </div>
+
             </FormProvider>
         </>
     )
