@@ -34,7 +34,7 @@ const App = () => {
     }
 
     const handleEmptyCart = async () => {
-        const { cart } = commerce.cart.empty()
+        const { cart } = await commerce.cart.empty()
         setCart(cart)
     }
 
